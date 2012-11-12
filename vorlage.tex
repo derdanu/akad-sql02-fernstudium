@@ -1,0 +1,63 @@
+%
+% Erstellt von Daniel Falkner
+% daniel.falkner@akad.de
+% 
+\documentclass[xcolor=dvipsnames]{beamer}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[justification=centering,figurename=Abb.]{caption}
+
+\usetheme{Warsaw}
+\usecolortheme[named=YellowGreen]{structure}
+
+\newcommand*{\Title}{Was spricht für ein Fernstudium?} %Titel
+\subtitle{Modul SQL02} %Untertitel
+\newcommand*{\Author}{Daniel Falkner} %Name
+\institute{AKAD Pinneberg} %Uni
+\titlegraphic{\includegraphics[scale=0.2]{akad_logo.png}} %Logo
+
+\title{\Title}
+\author{\Author}
+\date{\today}
+
+%Pdf Metainformationen
+\subject{\Title}
+\keywords{}
+
+\begin{document}
+
+%Titelseite
+\begin{frame}
+    \titlepage
+\end{frame}
+
+%Logo auf allen weiteren Folien
+%\logo{\includegraphics[scale=0.1]{akad_logo.png}}
+
+%Inhaltsverzeichniss
+\frame{\tableofcontents} 
+
+%Ab hier die Folien 
+ 
+
+
+\section{Texte}
+\begin{frame}
+  \frametitle{Einleitung}
+	Text
+\end{frame}
+
+
+\subsection*{Ende}
+\begin{frame}
+	\begin{block}{}	
+		\begin{center}
+			Vielen Dank für Ihre Aufmerksamkeit. \\
+			\Author{}
+		\end{center}	
+	\end{block}
+\end{frame}
+
+\end{document}
+
+
