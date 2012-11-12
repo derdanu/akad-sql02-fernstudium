@@ -1,4 +1,4 @@
-filename = vorlage
+filename = akad-sql02-fernstudium
 
 UNAME_S := $(shell uname -s)
 
