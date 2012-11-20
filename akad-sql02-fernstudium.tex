@@ -6,6 +6,8 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[justification=centering,figurename=Abb.]{caption}
+\usepackage{listings}
+\lstset{language=[LaTeX]TeX}
 
 \usetheme{Warsaw}
 \usecolortheme[named=YellowGreen]{structure}
@@ -35,7 +37,7 @@
 %\logo{\includegraphics[scale=0.1]{akad_logo.png}}
 
 %Inhaltsverzeichniss
-\frame{\tableofcontents} 
+\frame{\tableofcontents[hideallsubsections]} 
 
 %Ab hier die Folien 
  
@@ -48,12 +50,76 @@
 
 \section{Was ist \LaTeX{}?}
 \begin{frame}
-  \frametitle{\LaTeX{} ist ... }
-	\begin{itemize}
-  		\item kein Naturkautschuk \pause
-	  	\item ein Softwarepaket, das die Benutzung des Textsatzprogramms \TeX{} mit Hilfe von Makros vereinfacht \pause
-	  	\item Der Name ist eine Abkürzung für \textbf{La}mport \footnote<3>{Entwickler: Leslie Lamport} \textbf{TeX}
-	\end{itemize}
+  \frametitle{Was ist \LaTeX{}?}
+	\begin{block}{\LaTeX{} ist ... }	
+		\begin{itemize}
+  			\item kein Naturkautschuk
+	  		\item ein Softwarepaket
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\section{Nachteile}
+\begin{frame}
+  \frametitle{Nachteile}
+	\begin{alertblock}{}	
+		\begin{itemize}
+  			\item kein WYSIWYG (What You See Is What You Get)
+		\end{itemize}
+	\end{alertblock}
+\end{frame}
+
+\section{Vorteile}
+\begin{frame}
+  \frametitle{Vorteile}
+ 	 \tableofcontents[currentsection]
+\end{frame}
+
+\subsection{Einheitlich}
+\begin{frame}
+  \frametitle{Einheitlich}
+	\begin{block}{}	
+		\begin{itemize}
+  			\item Die Struktur der Dokumente ist einheitlich.
+		\end{itemize}
+	\end{block}	
+\end{frame}
+
+\subsection{Verzeichnisse}
+\begin{frame}
+  \frametitle{Verzeichnisse}
+	\begin{block}{}	
+		\begin{itemize}
+  			\item Inhaltsverzeichnis
+  			\item Abbildungsverzeichnis
+  			\item Tabellenverzeichnis
+	  		\item Abkürzungsverzeichnis
+  			\item Literaturverzeichnis
+		\end{itemize}
+	\end{block}			
+\end{frame}
+
+\subsection{Mathematische Formeln}
+\begin{frame}
+  \frametitle{Mathematische Formeln}
+	\begin{block}{}	
+		\begin{itemize}
+  			\item $\sqrt[n-1] {\frac{\sqrt{x^2+y^2+2xy}}{\sqrt{x^2}}} = z$ \pause
+	  		\item Beispiel: \lstinline!\\frac\{1\}\{2\}! $\Rightarrow$ $\frac{1}{2}$ 
+		\end{itemize}
+	\end{block}			
+\end{frame}
+
+\subsection{Textdateien}
+\begin{frame}
+  \frametitle{Textdateien}
+	\begin{block}{}	
+		\begin{itemize}
+  			\item \LaTeX{} Dateien sein einfache Textdateien
+  			\item keine Editorbindung und Platformübergreifend
+	  		\item Anbindung an Versionsverwaltungen (SVN, GIT)
+		\end{itemize}
+	\end{block}	
 \end{frame}
 
 \section{Vorlagen}
@@ -66,8 +132,6 @@
 	  	\item Präsentation \\ \url{https://github.com/derdanu/akad-beamer-vorlage}
 	  \end{itemize}
   \end{block}	
-
-
 \end{frame}
 
 \subsection*{Ende}
