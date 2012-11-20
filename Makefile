@@ -26,6 +26,9 @@ view:
 		$(MAKE) view ;\
 	fi
 
+handout: latex
+	$(pdflatexcmd) $(filename)-handout
+
 debug: 
 	$(MAKE) latex ;\
 	$(MAKE) view ;\
