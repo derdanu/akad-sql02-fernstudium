@@ -13,7 +13,7 @@ ifeq ($(UNAME_S), Darwin)
 endif
 
 
-all: latex
+all: handout
 latex:
 	$(pdflatexcmd) $(filename)
 	$(pdflatexcmd) $(filename)
